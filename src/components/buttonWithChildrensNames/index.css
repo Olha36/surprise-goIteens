@@ -1,0 +1,24 @@
+.container {
+  text-align: center;
+}
+.students button {
+  padding: 10px;
+  background-color: rgb(51, 188, 212);
+  color: beige;
+  margin: 10px;
+  width: 121px;
+}
+.students button:hover {
+  cursor: pointer;
+}
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.return {
+  padding: 10px;
+  background-color: rgb(51, 188, 212);
+  color: beige;
+}
