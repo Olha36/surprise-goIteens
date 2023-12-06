@@ -1,22 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import FavouriteStudent from './components/buttonWithChildrensNames';
+// import FavouriteStudent from './components/buttonWithChildrensNames';
+import {BrowserRouter, Routes,  Route} from 'react-router-dom';
+import Oleg from './pages/oleg';
 
 
 function App() {
-  const [showFavouriteStudent, setShowFavouriteStudent] = useState(false);
+  // const [showFavouriteStudent, setShowFavouriteStudent] = useState(false);
 
-  const handleButtonClick = () => {
-    setShowFavouriteStudent(true);
-  };
+  // const handleButtonClick = () => {
+  //   setShowFavouriteStudent(true);
+  // };
 
   return (
     <div>
-      {!showFavouriteStudent ? (
-        <button onClick={handleButtonClick}>Click me!</button>
-      ) : (
-        <FavouriteStudent />
-      )}
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/oleg" element={<Oleg />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      {/* <div>
+        {!showFavouriteStudent ? (
+          <button onClick={handleButtonClick}>Click me!</button>
+        ) : (
+          <FavouriteStudent />
+        )}
+      </div> */}
     </div>
   );
 }
