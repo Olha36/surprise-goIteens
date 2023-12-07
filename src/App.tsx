@@ -1,34 +1,26 @@
 import React from 'react';
 import './App.css';
-// import FavouriteStudent from './components/buttonWithChildrensNames';
 import {BrowserRouter, Routes,  Route} from 'react-router-dom';
-import Oleg from './pages/oleg';
-
+import About from './pages/about/about';
+import Home from './pages/home/home';
+import Contact from './pages/contact/contact';
+import NoPage from './pages/noPage/noPage';
 
 function App() {
-  // const [showFavouriteStudent, setShowFavouriteStudent] = useState(false);
-
-  // const handleButtonClick = () => {
-  //   setShowFavouriteStudent(true);
-  // };
 
   return (
-    <div>
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/oleg" element={<Oleg />} />
+            <Route path="*" element={<NoPage />} />
+            <Route index element={<Home/>} />
+            <Route path="/home" element={<Home />} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
           </Routes>
         </BrowserRouter>
       </div>
-      {/* <div>
-        {!showFavouriteStudent ? (
-          <button onClick={handleButtonClick}>Click me!</button>
-        ) : (
-          <FavouriteStudent />
-        )}
-      </div> */}
-    </div>
+      
   );
 }
 
