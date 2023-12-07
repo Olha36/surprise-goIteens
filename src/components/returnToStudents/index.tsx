@@ -4,10 +4,10 @@ import { Stack } from '@mui/material';
 import Button from "@mui/material/Button";
 
 
-export const ReturnToMain = () => {
+export const ReturnToStudents = () => {
   return (
     <>
-      <Link to="/">
+      <Link to="/cards">
         <Stack spacing={2} direction="row" justifyContent="center">
           <Button variant="contained">Повернутися на головну</Button>
         </Stack>

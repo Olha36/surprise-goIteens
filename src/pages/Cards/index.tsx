@@ -3,6 +3,8 @@ import { ReturnToMain } from "../../components/returnToMain";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
+import { Stack } from '@mui/material';
 import "./style.css";
 
 export default function Cards() {
@@ -13,6 +15,7 @@ export default function Cards() {
         sx={{
           display: "flex",
           flexDirection: "column",
+          alignItems: "center",
           "& > *": {
             m: 5,
           },
@@ -22,7 +25,12 @@ export default function Cards() {
         orientation="vertical"
         aria-label="vertical outlined button group"
         >
-          <Button key="oleg">Олег</Button>
+          <Link to="/oleg">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="oleg">Олег</Button>
+            </Stack>
+          </Link>
+          
           <Button key="vania">Ваня</Button>
           <Button key="nastiia">Настя</Button>
           <Button key="dania1">Даня Щ.</Button>
