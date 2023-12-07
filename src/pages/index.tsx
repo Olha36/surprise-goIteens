@@ -1,7 +1,7 @@
 import Home from "./Home";
-import Settings from './Settings/index';
+import Cards from './Cards/index';
 
 export {
   Home,
-  Settings
+  Cards
 }

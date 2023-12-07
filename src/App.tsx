@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, Settings } from './pages';
+import { Cards, Home } from './pages';
 // import { Stack } from '@mui/material';
 // import { Link } from "react-router-dom";
 // import Button from "@mui/material/Button";
@@ -18,7 +18,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/cards" element={<Cards />} />
       </Routes>
     </BrowserRouter>
       
