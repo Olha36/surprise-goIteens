@@ -30,16 +30,57 @@ export default function Cards() {
             <Button key="oleg">Олег</Button>
             </Stack>
           </Link>
+
+          <Link to="/vanya">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="vania">Ваня</Button>
+            </Stack>
+          </Link>
+
+          <Link to="/nastya">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="nastiia">Настя</Button>
+            </Stack>
+          </Link>
+
+          <Link to="/danyai">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="dania2">Даня І.</Button>
+            </Stack>
+          </Link>
+
+          <Link to="/danyas">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="dania1">Даня Щ.</Button>
+            </Stack>
+          </Link>
           
-          <Button key="vania">Ваня</Button>
-          <Button key="nastiia">Настя</Button>
-          <Button key="dania1">Даня Щ.</Button>
-          <Button key="dania2">Даня І.</Button>
-          <Button key="nazar">Назар</Button>
-          <Button key="erik">Ерік</Button>
-          <Button key="yura">Юра</Button>
-          <Button key="edward">Едвард</Button>
-      </ButtonGroup>
+          <Link to="/nazar">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="nazar">Назар</Button>
+            </Stack>
+          </Link>
+          
+          <Link to="/erik">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="erik">Ерік</Button>
+            </Stack>
+          </Link>
+         
+          <Link to="/yura">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="yura">Юра</Button>
+            </Stack>
+          </Link>
+
+          <Link to="/edward">
+            <Stack spacing={2} direction="row" justifyContent="center">
+            <Button key="edward">Едвард</Button>
+            </Stack>
+          </Link>
+
+          
+        </ButtonGroup>
     </Box>
       <ReturnToMain />
     </>

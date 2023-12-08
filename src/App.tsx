@@ -1,26 +1,32 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Cards, Home } from './pages';
+import { Cards, Home, Nazar } from './pages';
 import Oleg from './pages/Oleg';
-// import { Stack } from '@mui/material';
-// import { Link } from "react-router-dom";
-// import Button from "@mui/material/Button";
+import Vanya from './pages/Vanya';
+import Nastya from './pages/Nastya/index';
+import DanyaI from './pages/DanyaI/index';
+import DanyaS from './pages/DanyaS/index';
+import Erik from './pages/Erik';
+import Yura from './pages/Yura/index';
+import Edward from './pages/Edward/index';
 
 function App() {
 
   return (
     <BrowserRouter>
-      {/* <Link to="settings">
-        <Stack spacing={2} direction="row">
-          <Button variant="contained">Мій улюблений учень</Button>
-        </Stack>
-      </Link> */}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/oleg" element={<Oleg />} />
+        <Route path="/vanya" element={<Vanya />} />
+        <Route path="/nastya" element={<Nastya />} />
+        <Route path="/danyai" element={<DanyaI />} />
+        <Route path="/danyas" element={<DanyaS />} />
+        <Route path="/nazar" element={<Nazar />} />
+        <Route path="/erik" element={<Erik />} />
+        <Route path="/yura" element={<Yura />} />
+        <Route path="/edward" element={<Edward />} />
       </Routes>
     </BrowserRouter>
       
